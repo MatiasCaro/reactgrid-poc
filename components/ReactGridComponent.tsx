@@ -963,6 +963,8 @@ const getBranchList = () => {
     }));
 };
 
+const branchListValues = getBranchList().map((c) => ({ label: c.id, value: c.id }));
+
 const getRows = (products: Template[]) => [
     headerRow,
     ...products.map((product, idx) => ({
@@ -1012,7 +1014,7 @@ const getRows = (products: Template[]) => [
                 type: "dropdown",
                 selectedValue: product.branch.name,
                 isOpen: product.branch.isOpen,
-                values: getBranchList().map((c) => ({ label: c.id, value: c.id }))
+                values: branchListValues
             },
             {
                 type: "text",
