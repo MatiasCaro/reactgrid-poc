@@ -1,0 +1,795 @@
+[
+    {
+        "category_code": "R230300000000",
+        "attributes_values": [
+            {
+                "code": "Afganistan",
+                "label": "Afganistán"
+            },
+            {
+                "code": "Albania",
+                "label": "Albania"
+            },
+            {
+                "code": "Alemania",
+                "label": "Alemania"
+            },
+            {
+                "code": "Andorra",
+                "label": "Andorra"
+            },
+            {
+                "code": "Angola",
+                "label": "Angola"
+            },
+            {
+                "code": "Antigua_y_barbuda",
+                "label": "Antigua y Barbuda"
+            },
+            {
+                "code": "Arabia_saudita",
+                "label": "Arabia Saudita"
+            },
+            {
+                "code": "Argelia",
+                "label": "Argelia"
+            },
+            {
+                "code": "Argentina",
+                "label": "Argentina"
+            },
+            {
+                "code": "Armenia",
+                "label": "Armenia"
+            },
+            {
+                "code": "Australia",
+                "label": "Australia"
+            },
+            {
+                "code": "Austria",
+                "label": "Austria"
+            },
+            {
+                "code": "Azerbaiyan",
+                "label": "Azerbaiyán"
+            },
+            {
+                "code": "Bahamas",
+                "label": "Bahamas"
+            },
+            {
+                "code": "Banglades",
+                "label": "Bangladés"
+            },
+            {
+                "code": "Barbados",
+                "label": "Barbados"
+            },
+            {
+                "code": "Barein",
+                "label": "Baréin"
+            },
+            {
+                "code": "Belgica",
+                "label": "Bélgica"
+            },
+            {
+                "code": "Belice",
+                "label": "Belice"
+            },
+            {
+                "code": "Benin",
+                "label": "Benín"
+            },
+            {
+                "code": "Bielorrusia",
+                "label": "Bielorrusia"
+            },
+            {
+                "code": "Birmania",
+                "label": "Birmania"
+            },
+            {
+                "code": "Bolivia",
+                "label": "Bolivia"
+            },
+            {
+                "code": "Bosnia_herzegovina",
+                "label": "Bosnia-Herzegovina"
+            },
+            {
+                "code": "Botsuana",
+                "label": "Botsuana"
+            },
+            {
+                "code": "Brasil",
+                "label": "Brasil"
+            },
+            {
+                "code": "Brunei",
+                "label": "Brunéi"
+            },
+            {
+                "code": "Bulgaria",
+                "label": "Bulgaria"
+            },
+            {
+                "code": "Burkina_faso",
+                "label": "Burkina Faso"
+            },
+            {
+                "code": "Burundi",
+                "label": "Burundi"
+            },
+            {
+                "code": "Butan",
+                "label": "Bután"
+            },
+            {
+                "code": "Cabo_verde",
+                "label": "Cabo Verde"
+            },
+            {
+                "code": "Camboya",
+                "label": "Camboya"
+            },
+            {
+                "code": "Camerun",
+                "label": "Camerún"
+            },
+            {
+                "code": "Canada",
+                "label": "Canadá"
+            },
+            {
+                "code": "Catar",
+                "label": "Catar"
+            },
+            {
+                "code": "Chad",
+                "label": "Chad"
+            },
+            {
+                "code": "Chile",
+                "label": "Chile"
+            },
+            {
+                "code": "China",
+                "label": "China"
+            },
+            {
+                "code": "Chipre",
+                "label": "Chipre"
+            },
+            {
+                "code": "Colombia",
+                "label": "Colombia"
+            },
+            {
+                "code": "Comoras",
+                "label": "Comoras"
+            },
+            {
+                "code": "Congo",
+                "label": "Congo"
+            },
+            {
+                "code": "Corea_del_norte",
+                "label": "Corea del Norte"
+            },
+            {
+                "code": "Corea_del_sur",
+                "label": "Corea del Sur"
+            },
+            {
+                "code": "Costa_de_marfil",
+                "label": "Costa de Marfil"
+            },
+            {
+                "code": "Costa_rica",
+                "label": "Costa Rica"
+            },
+            {
+                "code": "Croacia",
+                "label": "Croacia"
+            },
+            {
+                "code": "Cuba",
+                "label": "Cuba"
+            },
+            {
+                "code": "Dinamarca",
+                "label": "Dinamarca"
+            },
+            {
+                "code": "Dominica",
+                "label": "Dominica"
+            },
+            {
+                "code": "Ecuador",
+                "label": "Ecuador"
+            },
+            {
+                "code": "Egipto",
+                "label": "Egipto"
+            },
+            {
+                "code": "El_salvador",
+                "label": "El Salvador"
+            },
+            {
+                "code": "Emiratos_arabes_unidos",
+                "label": "Emiratos Árabes Unidos"
+            },
+            {
+                "code": "Eritrea",
+                "label": "Eritrea"
+            },
+            {
+                "code": "Eslovaquia",
+                "label": "Eslovaquia"
+            },
+            {
+                "code": "Eslovenia",
+                "label": "Eslovenia"
+            },
+            {
+                "code": "Espania",
+                "label": "España"
+            },
+            {
+                "code": "Estados_unidos",
+                "label": "Estados Unidos"
+            },
+            {
+                "code": "Estonia",
+                "label": "Estonia"
+            },
+            {
+                "code": "Esuatini",
+                "label": "Esuatini"
+            },
+            {
+                "code": "Etiopia",
+                "label": "Etiopía"
+            },
+            {
+                "code": "Filipinas",
+                "label": "Filipinas"
+            },
+            {
+                "code": "Finlandia",
+                "label": "Finlandia"
+            },
+            {
+                "code": "Fiyi",
+                "label": "Fiyi"
+            },
+            {
+                "code": "Francia",
+                "label": "Francia"
+            },
+            {
+                "code": "Gabon",
+                "label": "Gabón"
+            },
+            {
+                "code": "Gambia",
+                "label": "Gambia"
+            },
+            {
+                "code": "Georgia",
+                "label": "Georgia"
+            },
+            {
+                "code": "Ghana",
+                "label": "Ghana"
+            },
+            {
+                "code": "Granada",
+                "label": "Granada"
+            },
+            {
+                "code": "Grecia",
+                "label": "Grecia"
+            },
+            {
+                "code": "Guatemala",
+                "label": "Guatemala"
+            },
+            {
+                "code": "Guinea",
+                "label": "Guinea"
+            },
+            {
+                "code": "Guinea_bisau",
+                "label": "Guinea-Bisáu"
+            },
+            {
+                "code": "Guinea_ecuatorial",
+                "label": "Guinea Ecuatorial"
+            },
+            {
+                "code": "Guyana",
+                "label": "Guyana"
+            },
+            {
+                "code": "Haiti",
+                "label": "Haití"
+            },
+            {
+                "code": "Honduras",
+                "label": "Honduras"
+            },
+            {
+                "code": "Hungria",
+                "label": "Hungría"
+            },
+            {
+                "code": "India",
+                "label": "India"
+            },
+            {
+                "code": "Indonesia",
+                "label": "Indonesia"
+            },
+            {
+                "code": "Irak",
+                "label": "Irak"
+            },
+            {
+                "code": "Iran",
+                "label": "Irán"
+            },
+            {
+                "code": "Irlanda",
+                "label": "Irlanda"
+            },
+            {
+                "code": "Islandia",
+                "label": "Islandia"
+            },
+            {
+                "code": "Islas_marshall",
+                "label": "Islas Marshall"
+            },
+            {
+                "code": "Islas_salomon",
+                "label": "Islas Salomón"
+            },
+            {
+                "code": "Israel",
+                "label": "Israel"
+            },
+            {
+                "code": "Italia",
+                "label": "Italia"
+            },
+            {
+                "code": "Jamaica",
+                "label": "Jamaica"
+            },
+            {
+                "code": "Japon",
+                "label": "Japón"
+            },
+            {
+                "code": "Jordania",
+                "label": "Jordania"
+            },
+            {
+                "code": "Kazajistan",
+                "label": "Kazajistán"
+            },
+            {
+                "code": "Kenia",
+                "label": "Kenia"
+            },
+            {
+                "code": "Kirguistan",
+                "label": "Kirguistán"
+            },
+            {
+                "code": "Kiribati",
+                "label": "Kiribati"
+            },
+            {
+                "code": "Kosovo",
+                "label": "Kosovo"
+            },
+            {
+                "code": "Kuwait",
+                "label": "Kuwait"
+            },
+            {
+                "code": "Laos",
+                "label": "Laos"
+            },
+            {
+                "code": "Lesoto",
+                "label": "Lesoto"
+            },
+            {
+                "code": "Letonia",
+                "label": "Letonia"
+            },
+            {
+                "code": "Libano",
+                "label": "Líbano"
+            },
+            {
+                "code": "Liberia",
+                "label": "Liberia"
+            },
+            {
+                "code": "Libia",
+                "label": "Libia"
+            },
+            {
+                "code": "Liechtenstein",
+                "label": "Liechtenstein"
+            },
+            {
+                "code": "Lituania",
+                "label": "Lituania"
+            },
+            {
+                "code": "Luxemburgo",
+                "label": "Luxemburgo"
+            },
+            {
+                "code": "Macedonia_del_norte",
+                "label": "Macedonia del Norte"
+            },
+            {
+                "code": "Madagascar",
+                "label": "Madagascar"
+            },
+            {
+                "code": "Malasia",
+                "label": "Malasia"
+            },
+            {
+                "code": "Malaui",
+                "label": "Malaui"
+            },
+            {
+                "code": "Maldivas",
+                "label": "Maldivas"
+            },
+            {
+                "code": "Mali",
+                "label": "Malí"
+            },
+            {
+                "code": "Malta",
+                "label": "Malta"
+            },
+            {
+                "code": "Marruecos",
+                "label": "Marruecos"
+            },
+            {
+                "code": "Mauricio",
+                "label": "Mauricio"
+            },
+            {
+                "code": "Mauritania",
+                "label": "Mauritania"
+            },
+            {
+                "code": "Mexico",
+                "label": "México"
+            },
+            {
+                "code": "Micronesia",
+                "label": "Micronesia"
+            },
+            {
+                "code": "Moldavia",
+                "label": "Moldavia"
+            },
+            {
+                "code": "Monaco",
+                "label": "Mónaco"
+            },
+            {
+                "code": "Mongolia",
+                "label": "Mongolia"
+            },
+            {
+                "code": "Montenegro",
+                "label": "Montenegro"
+            },
+            {
+                "code": "Mozambique",
+                "label": "Mozambique"
+            },
+            {
+                "code": "Namibia",
+                "label": "Namibia"
+            },
+            {
+                "code": "Nauru",
+                "label": "Nauru"
+            },
+            {
+                "code": "Nepal",
+                "label": "Nepal"
+            },
+            {
+                "code": "Nicaragua",
+                "label": "Nicaragua"
+            },
+            {
+                "code": "Niger",
+                "label": "Níger"
+            },
+            {
+                "code": "Nigeria",
+                "label": "Nigeria"
+            },
+            {
+                "code": "Noruega",
+                "label": "Noruega"
+            },
+            {
+                "code": "Nueva_zelanda",
+                "label": "Nueva Zelanda"
+            },
+            {
+                "code": "Oman",
+                "label": "Omán"
+            },
+            {
+                "code": "Paises_bajos",
+                "label": "Países Bajos"
+            },
+            {
+                "code": "Pakistan",
+                "label": "Pakistán"
+            },
+            {
+                "code": "Palaos",
+                "label": "Palaos"
+            },
+            {
+                "code": "Palestina",
+                "label": "Palestina"
+            },
+            {
+                "code": "Panama",
+                "label": "Panamá"
+            },
+            {
+                "code": "Papua_nueva_guinea",
+                "label": "Papúa Nueva Guinea"
+            },
+            {
+                "code": "Paraguay",
+                "label": "Paraguay"
+            },
+            {
+                "code": "Peru",
+                "label": "Perú"
+            },
+            {
+                "code": "Polonia",
+                "label": "Polonia"
+            },
+            {
+                "code": "Portugal",
+                "label": "Portugal"
+            },
+            {
+                "code": "Reino_unido",
+                "label": "Reino Unido"
+            },
+            {
+                "code": "Republica_centroafricana",
+                "label": "República Centroafricana"
+            },
+            {
+                "code": "Republica_checa",
+                "label": "República Checa"
+            },
+            {
+                "code": "Republica_democratica_del_congo",
+                "label": "República Democrática del Congo"
+            },
+            {
+                "code": "Republica_dominicana",
+                "label": "República Dominicana"
+            },
+            {
+                "code": "Ruanda",
+                "label": "Ruanda"
+            },
+            {
+                "code": "Rumania",
+                "label": "Rumania"
+            },
+            {
+                "code": "Rusia",
+                "label": "Rusia"
+            },
+            {
+                "code": "Samoa",
+                "label": "Samoa"
+            },
+            {
+                "code": "San_cristobal_y_nieves",
+                "label": "San Cristóbal y Nieves"
+            },
+            {
+                "code": "San_marino",
+                "label": "San Marino"
+            },
+            {
+                "code": "San_vicente_y_las_granadinas",
+                "label": "San Vicente y las Granadinas"
+            },
+            {
+                "code": "Santa_lucia",
+                "label": "Santa Lucía"
+            },
+            {
+                "code": "Santo_tome_y_principe",
+                "label": "Santo Tomé y Príncipe"
+            },
+            {
+                "code": "Senegal",
+                "label": "Senegal"
+            },
+            {
+                "code": "Serbia",
+                "label": "Serbia"
+            },
+            {
+                "code": "Seychelles",
+                "label": "Seychelles"
+            },
+            {
+                "code": "Sierra_leona",
+                "label": "Sierra Leona"
+            },
+            {
+                "code": "Singapur",
+                "label": "Singapur"
+            },
+            {
+                "code": "Siria",
+                "label": "Siria"
+            },
+            {
+                "code": "Somalia",
+                "label": "Somalia"
+            },
+            {
+                "code": "Sri_lanka",
+                "label": "Sri Lanka"
+            },
+            {
+                "code": "Sudafrica",
+                "label": "Sudáfrica"
+            },
+            {
+                "code": "Sudan",
+                "label": "Sudán"
+            },
+            {
+                "code": "Sudan_del_sur",
+                "label": "Sudán del Sur"
+            },
+            {
+                "code": "Suecia",
+                "label": "Suecia"
+            },
+            {
+                "code": "Suiza",
+                "label": "Suiza"
+            },
+            {
+                "code": "Surinam",
+                "label": "Surinam"
+            },
+            {
+                "code": "Tailandia",
+                "label": "Tailandia"
+            },
+            {
+                "code": "Taiwan",
+                "label": "Taiwán"
+            },
+            {
+                "code": "Tanzania",
+                "label": "Tanzania"
+            },
+            {
+                "code": "Tayikistan",
+                "label": "Tayikistán"
+            },
+            {
+                "code": "Timor_oriental",
+                "label": "Timor Oriental"
+            },
+            {
+                "code": "Togo",
+                "label": "Togo"
+            },
+            {
+                "code": "Tonga",
+                "label": "Tonga"
+            },
+            {
+                "code": "Trinidad_y_tobago",
+                "label": "Trinidad y Tobago"
+            },
+            {
+                "code": "Tunez",
+                "label": "Túnez"
+            },
+            {
+                "code": "Turkmenistan",
+                "label": "Turkmenistán"
+            },
+            {
+                "code": "Turquia",
+                "label": "Turquía"
+            },
+            {
+                "code": "Tuvalu",
+                "label": "Tuvalu"
+            },
+            {
+                "code": "Ucrania",
+                "label": "Ucrania"
+            },
+            {
+                "code": "Uganda",
+                "label": "Uganda"
+            },
+            {
+                "code": "Uruguay",
+                "label": "Uruguay"
+            },
+            {
+                "code": "Uzbekistan",
+                "label": "Uzbekistán"
+            },
+            {
+                "code": "Vanuatu",
+                "label": "Vanuatu"
+            },
+            {
+                "code": "Vaticano",
+                "label": "Vaticano"
+            },
+            {
+                "code": "Venezuela",
+                "label": "Venezuela"
+            },
+            {
+                "code": "Vietnam",
+                "label": "Vietnam"
+            },
+            {
+                "code": "Yemen",
+                "label": "Yemen"
+            },
+            {
+                "code": "Yibuti",
+                "label": "Yibuti"
+            },
+            {
+                "code": "Zambia",
+                "label": "Zambia"
+            },
+            {
+                "code": "Zimbabue",
+                "label": "Zimbabue"
+            }
+        ]
+    }
+]

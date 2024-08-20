@@ -1,0 +1,11 @@
+.reactgrid {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.invalid {
+    background-color: #ffa5a5;
+}
+
+.rg-cell-nonEditable {
+    background-color: lightgray;
+}

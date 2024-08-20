@@ -1,0 +1,27 @@
+[
+    {
+        "category_code": "R230300000000",
+        "attributes_values": [
+            {
+                "code": "Hombre",
+                "label": "Hombre"
+            },
+            {
+                "code": "Mujer",
+                "label": "Mujer"
+            },
+            {
+                "code": "Ninia",
+                "label": "Niña"
+            },
+            {
+                "code": "Ninio",
+                "label": "Niño"
+            },
+            {
+                "code": "Unisex",
+                "label": "Unisex"
+            }
+        ]
+    }
+]

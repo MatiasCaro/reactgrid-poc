@@ -1,4 +1,4 @@
-import ReactGridComponent from "../components/ReactGridComponent";
+import ReactGridComponent from "../../components/ReactGridComponent";
 
 export default function HomePage() {
     return (
