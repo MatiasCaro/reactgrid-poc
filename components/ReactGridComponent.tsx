@@ -956,7 +956,11 @@ const getGenericsList = () => {
     }));
 };
 
+let callCount = 0;
+
 const getBranchList = () => {
+    callCount++;
+    console.log(`getBranchList() ha sido llamado ${callCount} veces`);
     return branchData[0].attributes_values.map((branch) => ({
         id: branch.code,
         text: branch.label,
@@ -1046,12 +1050,9 @@ const getRows = (products: Template[]) => [
 ];
 
 const applyChangesToProduct = (change: any, prevProduct: Template[]) => {
-    // changes.forEach((change) => {
         const rowIndex = change.rowId;
         const columnName = change.columnId;
 
-        // console.log('Change prev ', change.previousCell)
-        // console.log('Product prev ', prevProduct[rowIndex][columnName].name)
         if (change.type === "text") {
             prevProduct[rowIndex][columnName] = change.newCell.text;
         }
@@ -1062,14 +1063,10 @@ const applyChangesToProduct = (change: any, prevProduct: Template[]) => {
 
         if (change.type === "dropdown") {
             if (change.newCell.selectedValue !== change.previousCell.selectedValue) {
-                console.log(
-                    `Is opened: ${change.previousCell.isOpen} -> ${change.newCell.isOpen}`
-                );
                 prevProduct[rowIndex][columnName].name = change.newCell.selectedValue;
             }
             prevProduct[rowIndex][columnName].isOpen = change.newCell.isOpen;
         }
-    // });
     return [...prevProduct];
 };
 
@@ -1091,7 +1088,6 @@ const App = () => {
     }
 
     const handleChanges = (changes: CellChange<DropdownCell | TextCell | NumberCell>[]) => {
-        console.log('change', changes)
         changes.forEach((change) => {
             setProduct((prevProduct) => applyChangesToProduct(change, prevProduct));
         });
