@@ -960,7 +960,7 @@ let callCount = 0;
 
 const getBranchList = () => {
     callCount++;
-    console.log(`getBranchList() ha sido llamado ${callCount} veces`);
+    console.log(`getBranchList() has been called ${callCount} times`);
     return branchData[0].attributes_values.map((branch) => ({
         id: branch.code,
         text: branch.label,
