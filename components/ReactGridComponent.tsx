@@ -5,6 +5,7 @@ import { CellChange, Column, DropdownCell, NumberCell, ReactGrid, Row, TextCell 
 import "@silevis/reactgrid/styles.css";
 import countriesData from "../country.json";
 import genericsData from "../gender.json";
+import branchData from "../branch.json";
 
 interface Template {
     categories: string;
@@ -15,7 +16,7 @@ interface Template {
     line_code: number;
     title: string;
     description: string;
-    branch: string;
+    branch: any;
     estilo_zap_lov: string;
     gender: any;
     made_in: any;
@@ -32,7 +33,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "BOTIN COLORADO CAT HOMBRE",
         description: "",
-        branch: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
         estilo_zap_lov: "",
         gender: {
             type: "dropdown",
@@ -54,7 +59,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "dropdown",
@@ -76,7 +85,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "BOTIN COLORADO CAT HOMBRE",
         description: "",
-        branch: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
         estilo_zap_lov: "",
         gender: {
             type: "dropdown",
@@ -98,7 +111,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "dropdown",
@@ -120,7 +137,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "BOTIN COLORADO CAT HOMBRE",
         description: "",
-        branch: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
         estilo_zap_lov: "",
         gender: {
             type: "dropdown",
@@ -142,7 +163,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "dropdown",
@@ -165,7 +190,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "BOTIN COLORADO CAT HOMBRE",
         description: "",
-        branch: "",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "",
         gender: {
             type: "dropdown",
@@ -191,7 +220,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "text",
@@ -216,7 +249,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "text",
@@ -241,7 +278,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "text",
@@ -266,7 +307,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "text",
@@ -291,7 +336,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "text",
@@ -316,7 +365,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "text",
@@ -341,7 +394,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "text",
@@ -366,7 +423,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "text",
@@ -391,7 +452,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "text",
@@ -416,7 +481,11 @@ const getProduct = (): Template[] => [
         line_code: 2,
         title: "ZAPATILLAS NIKE 3452",
         description: "LAS MEJORES ZAPATILLAS PARA EL OUTDOOR",
-        branch: "NIKE",
+        branch: {
+            type: "dropdown",
+            name: "NIKE",
+            isOpen: false
+        },
         estilo_zap_lov: "Zapatilla",
         gender: {
             type: "text",
@@ -429,6 +498,412 @@ const getProduct = (): Template[] => [
         made_in: {
             type: "dropdown",
             name: "Australia",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+    },
+    {
+        categories: "",
+        composition: "",
+        variant_id: 0,
+        product_type: 0,
+        department_code: 0,
+        line_code: 0,
+        title: "",
+        description: "",
+        branch: {
+            type: "dropdown",
+            name: "",
+            isOpen: false
+        },
+        estilo_zap_lov: "",
+        gender: {
+            type: "text",
+            name: "",
+            isOpen: false,
+            props: {
+                nonEditable: true,
+            },
+        },
+        made_in: {
+            type: "dropdown",
+            name: "",
             isOpen: false
         },
     },
@@ -481,6 +956,13 @@ const getGenericsList = () => {
     }));
 };
 
+const getBranchList = () => {
+    return branchData[0].attributes_values.map((branch) => ({
+        id: branch.code,
+        text: branch.label,
+    }));
+};
+
 const getRows = (products: Template[]) => [
     headerRow,
     ...products.map((product, idx) => ({
@@ -527,25 +1009,16 @@ const getRows = (products: Template[]) => [
                 nonEditable: product.props?.nonEditable,
             },
             {
-                type: "text",
-                text: product.branch,
-                nonEditable: product.props?.nonEditable,
+                type: "dropdown",
+                selectedValue: product.branch.name,
+                isOpen: product.branch.isOpen,
+                values: getBranchList().map((c) => ({ label: c.id, value: c.id }))
             },
             {
                 type: "text",
                 text: product.estilo_zap_lov,
                 nonEditable: product.props?.nonEditable,
             },
-            // {
-            //     type: "dropdown",
-            //     selectedValue: product.gender.name,
-            //     isOpen: product.gender.isOpen,
-            //     values: getGenericsList().map((c) => ({ label: c.id, value: c.id })),
-            //     nonEditable: product.gender.props?.nonEditable,
-            //     style: {
-            //         backgroundColor: product.gender.props?.backgroundColor
-            //     }
-            // },
             ...(!product.composition.includes("VARIANTE") ? [{
                 type: "dropdown",
                 selectedValue: product.gender.name,
