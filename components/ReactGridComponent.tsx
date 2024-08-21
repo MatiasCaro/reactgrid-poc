@@ -1,13 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { CellChange, Column, DropdownCell, NumberCell, ReactGrid, Row, TextCell } from "@silevis/reactgrid";
 import "@silevis/reactgrid/styles.css";
 import countriesData from "../country.json";
 import genericsData from "../gender.json";
-import branchData from "../branch.json";
+import colorData from "../color_80.json";
+// import branchData from "../branch.json";
 import { getProduct } from "../data"
 import { Template } from "../types"
+
+// const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
 const getColumns = () => [
     { columnId: "categories", width: 150, resizable: true },
@@ -18,7 +21,7 @@ const getColumns = () => [
     { columnId: "line_code", width: 150, resizable: true },
     { columnId: "title", width: 150, resizable: true },
     { columnId: "description", width: 150, resizable: true },
-    { columnId: "branch", width: 150, resizable: true },
+    { columnId: "color_80", width: 150, resizable: true },
     { columnId: "estilo_zap_lov", width: 150, resizable: true },
     { columnId: "gender", width: 150, resizable: true },
     { columnId: "made_in", width: 150, resizable: true },
@@ -35,7 +38,7 @@ const headerRow: Row = {
         { type: "header", text: "line_code" },
         { type: "header", text: "Titulo" },
         { type: "header", text: "Descripcion" },
-        { type: "header", text: "Marca" },
+        { type: "header", text: "Color 80" },
         { type: "header", text: "estilo_zap_lov" },
         { type: "header", text: "genero_" },
         { type: "header", text: "pais_fabricacion" },
@@ -56,20 +59,56 @@ const getGenericsList = () => {
     }));
 };
 
-let callCount = 0;
-
-const getBranchList = () => {
-    callCount++;
-    console.log(`getBranchList() has been called ${callCount} times`);
-    return branchData[0].attributes_values.map((branch) => ({
-        id: branch.code,
-        text: branch.label,
+const getColorList = () => {
+    return colorData[0].attributes_values.map((color) => ({
+        id: color.code,
+        text: color.label,
     }));
 };
 
-const branchListValues = getBranchList().map((c) => ({ label: c.id, value: c.id }));
+// const loadBranchData = async () => {
+//     await delay(1000); // Simulate a delay for loading
+//     return branchData[0].attributes_values.map((branch) => ({
+//         label: branch.code,
+//         value: branch.label,
+//     }));
+// };
 
-const getRows = (products: Template[]) => [
+// const useLazyLoadedBranchList = () => {
+//     const [branchList, setBranchList] = useState<{ label: string, value: string }[]>([]);
+//     const [filteredBranchList, setFilteredBranchList] = useState(branchList);
+//     const [loading, setLoading] = useState(true);
+
+//     useEffect(() => {
+//         const fetchData = async () => {
+//             const data = await loadBranchData();
+//             setBranchList(data);
+//             setFilteredBranchList(data);
+//             setLoading(false);
+//         };
+//         fetchData();
+//     }, []);
+
+//     const filterBranchList = (input: string) => {
+//         if (!input) {
+//             setFilteredBranchList(branchList);
+//         } else {
+//             const filtered = branchList.filter(branch =>
+//                 branch.label.toLowerCase().includes(input.toLowerCase())
+//             );
+//             setFilteredBranchList(filtered);
+//         }
+//     };
+
+//     return { filteredBranchList, loading, filterBranchList };
+// };
+
+
+const getRows = (
+    products: Template[], 
+    // branchListValues: { label: string, value: string }[], 
+    // filterBranchList: (input: string) => void
+) => [
     headerRow,
     ...products.map((product, idx) => ({
         rowId: idx,
@@ -116,9 +155,9 @@ const getRows = (products: Template[]) => [
             },
             {
                 type: "dropdown",
-                selectedValue: product.branch.name,
-                isOpen: product.branch.isOpen,
-                values: branchListValues
+                selectedValue: product.color_80.name,
+                isOpen: product.color_80.isOpen,
+                values: getColorList().map((c) => ({ label: c.id, value: c.id })),
             },
             {
                 type: "text",
@@ -173,10 +212,13 @@ const applyChangesToProduct = (change: any, prevProduct: Template[]) => {
 const App = () => {
     const [product, setProduct] = useState(getProduct());
     const [columns, setColumns] = useState<Column[]>(getColumns());
+    // const { filteredBranchList, loading, filterBranchList } = useLazyLoadedBranchList();
 
-    const rows = getRows(product);
-    // const columns = getColumns();
-
+    const rows = getRows(
+        product, 
+        // filteredBranchList, 
+        // filterBranchList
+    );
     const handleColumnResize = (ci: Id, width: number) => {
         setColumns((prevColumns) => {
             const columnIndex = prevColumns.findIndex(el => el.columnId === ci);

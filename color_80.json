@@ -1,0 +1,427 @@
+[
+    {
+        "category_code": "R230300000000",
+        "attributes_values": [
+            {
+                "code": "Acero",
+                "label": "Acero"
+            },
+            {
+                "code": "Agua",
+                "label": "Agua"
+            },
+            {
+                "code": "Almendra",
+                "label": "Almendra"
+            },
+            {
+                "code": "Amarillo",
+                "label": "Amarillo"
+            },
+            {
+                "code": "Ambar",
+                "label": "Ambar"
+            },
+            {
+                "code": "Arena",
+                "label": "Arena"
+            },
+            {
+                "code": "Azul",
+                "label": "Azul"
+            },
+            {
+                "code": "Azul_bebe",
+                "label": "Azul bebé"
+            },
+            {
+                "code": "Azul_cielo",
+                "label": "Azul cielo"
+            },
+            {
+                "code": "Azul_electrico",
+                "label": "Azul eléctrico"
+            },
+            {
+                "code": "Azul_marino",
+                "label": "Azul marino"
+            },
+            {
+                "code": "Beige",
+                "label": "Beige"
+            },
+            {
+                "code": "Berenjena",
+                "label": "Berenjena"
+            },
+            {
+                "code": "Blanco",
+                "label": "Blanco"
+            },
+            {
+                "code": "Blanco_invierno",
+                "label": "Blanco invierno"
+            },
+            {
+                "code": "Blush",
+                "label": "Blush"
+            },
+            {
+                "code": "Bronce",
+                "label": "Bronce"
+            },
+            {
+                "code": "Burdeo",
+                "label": "Burdeo"
+            },
+            {
+                "code": "Cafe",
+                "label": "Café"
+            },
+            {
+                "code": "Cafe_claro",
+                "label": "Café claro"
+            },
+            {
+                "code": "Calipso",
+                "label": "Calipso"
+            },
+            {
+                "code": "Camel",
+                "label": "Camel"
+            },
+            {
+                "code": "Canela",
+                "label": "Canela"
+            },
+            {
+                "code": "Caqui",
+                "label": "Caqui"
+            },
+            {
+                "code": "Caramelo",
+                "label": "Caramelo"
+            },
+            {
+                "code": "Carbon",
+                "label": "Carbón"
+            },
+            {
+                "code": "Castanio_balmes",
+                "label": "Castano Balmes"
+            },
+            {
+                "code": "Celeste",
+                "label": "Celeste"
+            },
+            {
+                "code": "Champana",
+                "label": "Champaña"
+            },
+            {
+                "code": "Chicle",
+                "label": "Chicle"
+            },
+            {
+                "code": "Chocolate",
+                "label": "Chocolate"
+            },
+            {
+                "code": "Ciruela",
+                "label": "Ciruela"
+            },
+            {
+                "code": "Cobre",
+                "label": "Cobre"
+            },
+            {
+                "code": "Coral",
+                "label": "Coral"
+            },
+            {
+                "code": "Crema",
+                "label": "Crema"
+            },
+            {
+                "code": "Crudo",
+                "label": "Crudo"
+            },
+            {
+                "code": "Damasco",
+                "label": "Damasco"
+            },
+            {
+                "code": "Denim",
+                "label": "Denim"
+            },
+            {
+                "code": "Dorado",
+                "label": "Dorado"
+            },
+            {
+                "code": "Durazno",
+                "label": "Durazno"
+            },
+            {
+                "code": "Ecru",
+                "label": "Ecru"
+            },
+            {
+                "code": "Esmeralda",
+                "label": "Esmeralda"
+            },
+            {
+                "code": "Fucsia",
+                "label": "Fucsia"
+            },
+            {
+                "code": "Grafito",
+                "label": "Grafito"
+            },
+            {
+                "code": "Gris",
+                "label": "Gris"
+            },
+            {
+                "code": "Gris_azulado",
+                "label": "Gris azulado"
+            },
+            {
+                "code": "Gris_claro",
+                "label": "Gris claro"
+            },
+            {
+                "code": "Gris_pardo",
+                "label": "Gris pardo"
+            },
+            {
+                "code": "Guinda",
+                "label": "Guinda"
+            },
+            {
+                "code": "Hielo",
+                "label": "Hielo"
+            },
+            {
+                "code": "Indigo",
+                "label": "Indigo"
+            },
+            {
+                "code": "Ladrillo",
+                "label": "Ladrillo"
+            },
+            {
+                "code": "Lavanda",
+                "label": "Lavanda"
+            },
+            {
+                "code": "Lila",
+                "label": "Lila"
+            },
+            {
+                "code": "Lima",
+                "label": "Lima"
+            },
+            {
+                "code": "Limon",
+                "label": "Limón"
+            },
+            {
+                "code": "Lucuma",
+                "label": "Lúcuma"
+            },
+            {
+                "code": "Magenta",
+                "label": "Magenta"
+            },
+            {
+                "code": "Malva",
+                "label": "Malva"
+            },
+            {
+                "code": "Mantequilla",
+                "label": "Mantequilla"
+            },
+            {
+                "code": "Marfil",
+                "label": "Marfil"
+            },
+            {
+                "code": "Menta",
+                "label": "Menta"
+            },
+            {
+                "code": "Menta_pastel",
+                "label": "Menta pastel"
+            },
+            {
+                "code": "Militar",
+                "label": "Militar"
+            },
+            {
+                "code": "Morado",
+                "label": "Morado"
+            },
+            {
+                "code": "Mostaza",
+                "label": "Mostaza"
+            },
+            {
+                "code": "Multicolor",
+                "label": "Multicolor"
+            },
+            {
+                "code": "Naranjo",
+                "label": "Naranjo"
+            },
+            {
+                "code": "Naranjo_claro",
+                "label": "Naranjo claro"
+            },
+            {
+                "code": "Negro",
+                "label": "Negro"
+            },
+            {
+                "code": "Niquel",
+                "label": "Níquel"
+            },
+            {
+                "code": "Nude",
+                "label": "Nude"
+            },
+            {
+                "code": "Ocre",
+                "label": "Ocre"
+            },
+            {
+                "code": "Oliva",
+                "label": "Oliva"
+            },
+            {
+                "code": "Oliva_claro",
+                "label": "Oliva claro"
+            },
+            {
+                "code": "Oro_rosa",
+                "label": "Oro rosa"
+            },
+            {
+                "code": "Oxido",
+                "label": "Óxido"
+            },
+            {
+                "code": "Palo_rosa",
+                "label": "Palo rosa"
+            },
+            {
+                "code": "Petroleo",
+                "label": "Petróleo"
+            },
+            {
+                "code": "Plata",
+                "label": "Plata"
+            },
+            {
+                "code": "Plateado",
+                "label": "Plateado"
+            },
+            {
+                "code": "Rojo",
+                "label": "Rojo"
+            },
+            {
+                "code": "Rosa",
+                "label": "Rosa"
+            },
+            {
+                "code": "Rosado",
+                "label": "Rosado"
+            },
+            {
+                "code": "Rubi",
+                "label": "Rubí"
+            },
+            {
+                "code": "Salmon",
+                "label": "Salmón"
+            },
+            {
+                "code": "Sandia",
+                "label": "Sandía"
+            },
+            {
+                "code": "Taupe",
+                "label": "Taupe"
+            },
+            {
+                "code": "Terracota",
+                "label": "Terracota"
+            },
+            {
+                "code": "Transparente",
+                "label": "Transparente"
+            },
+            {
+                "code": "Turquesa",
+                "label": "Turquesa"
+            },
+            {
+                "code": "Vainilla",
+                "label": "Vainilla"
+            },
+            {
+                "code": "Verde",
+                "label": "Verde"
+            },
+            {
+                "code": "Verde_claro",
+                "label": "Verde claro"
+            },
+            {
+                "code": "Verde_manzana",
+                "label": "Verde manzana"
+            },
+            {
+                "code": "Verde_petroleo",
+                "label": "Verde petróleo"
+            },
+            {
+                "code": "Violeta",
+                "label": "Violeta"
+            },
+            {
+                "code": "Madera_natural",
+                "label": "Madera Natural"
+            },
+            {
+                "code": "Caoba",
+                "label": "Caoba"
+            },
+            {
+                "code": "Alerce",
+                "label": "Alerce"
+            },
+            {
+                "code": "Nogal",
+                "label": "Nogal"
+            },
+            {
+                "code": "Roble",
+                "label": "Roble"
+            },
+            {
+                "code": "0NoExiste",
+                "label": "0NoExiste"
+            },
+            {
+                "code": "Apricot",
+                "label": "Apricot"
+            },
+            {
+                "code": "Cognac",
+                "label": "Cognac"
+            }
+        ]
+    }
+]

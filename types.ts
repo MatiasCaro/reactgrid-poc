@@ -27,7 +27,8 @@ export interface Template {
     line_code: number;
     title: string;
     description: string;
-    branch: DropdownField;
+    // branch: DropdownField;
+    color_80: DropdownField
     estilo_zap_lov: string;
     gender: DropdownField | TextField;
     made_in: DropdownField;
