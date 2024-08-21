@@ -45,26 +45,41 @@ const headerRow: Row = {
     ],
 };
 
+let callCountCountries = 0;
 const getCountriesList = () => {
+    callCountCountries++;
+    console.log(`getCountriesList() ha sido llamado ${callCountCountries} veces`);
     return countriesData[0].attributes_values.map((country) => ({
         id: country.code,
         text: country.label,
     }));
 };
 
+const countriesListValues = getCountriesList().map((c) => ({ label: c.id, value: c.id }));
+
+let callCountGenerics = 0;
 const getGenericsList = () => {
+    callCountGenerics++;
+    console.log(`getGenericsList() ha sido llamado ${callCountGenerics} veces`);
     return genericsData[0].attributes_values.map((gender) => ({
         id: gender.code,
         text: gender.label,
     }));
 };
 
+const genericsListValues = getGenericsList().map((c) => ({ label: c.id, value: c.id }));
+
+let callCountColor = 0;
 const getColorList = () => {
+    callCountColor++;
+    console.log(`getColorList() ha sido llamado ${callCountColor} veces`);
     return colorData[0].attributes_values.map((color) => ({
         id: color.code,
         text: color.label,
     }));
 };
+
+const colorsListValues = getColorList().map((c) => ({ label: c.id, value: c.id }));
 
 // const loadBranchData = async () => {
 //     await delay(1000); // Simulate a delay for loading
@@ -105,107 +120,107 @@ const getColorList = () => {
 
 
 const getRows = (
-    products: Template[], 
+    products: Template[],
     // branchListValues: { label: string, value: string }[], 
     // filterBranchList: (input: string) => void
 ) => [
-    headerRow,
-    ...products.map((product, idx) => ({
-        rowId: idx,
-        cells: [
-            {
-                type: "text",
-                text: product.categories,
-                nonEditable: product.props?.nonEditable,
-            },
-            {
-                type: "text",
-                text: product.composition,
-                nonEditable: product.props?.nonEditable,
-            },
-            {
-                type: "number",
-                value: product.variant_id,
-                nonEditable: product.props?.nonEditable,
-            },
-            {
-                type: "number",
-                value: product.product_type,
-                nonEditable: product.props?.nonEditable,
-            },
-            {
-                type: "number",
-                value: product.department_code,
-                nonEditable: product.props?.nonEditable,
-            },
-            {
-                type: "number",
-                value: product.line_code,
-                nonEditable: product.props?.nonEditable,
-            },
-            {
-                type: "text",
-                text: product.title,
-                nonEditable: product.props?.nonEditable,
-            },
-            {
-                type: "text",
-                text: product.description,
-                nonEditable: product.props?.nonEditable,
-            },
-            {
-                type: "dropdown",
-                selectedValue: product.color_80.name,
-                isOpen: product.color_80.isOpen,
-                values: getColorList().map((c) => ({ label: c.id, value: c.id })),
-            },
-            {
-                type: "text",
-                text: product.estilo_zap_lov,
-                nonEditable: product.props?.nonEditable,
-            },
-            ...(!product.composition.includes("VARIANTE") ? [{
-                type: "dropdown",
-                selectedValue: product.gender.name,
-                isOpen: product.gender.isOpen,
-                values: getGenericsList().map((c) => ({ label: c.id, value: c.id })),
-                nonEditable: product.gender.props?.nonEditable,
-                style: {
-                    backgroundColor: product.gender.props?.backgroundColor
-                }
-            }] : [{
-                type: "text",
-                text: '',
-                nonEditable: product.gender.props?.nonEditable,
-            }]),
-            {
-                type: "dropdown",
-                selectedValue: product.made_in.name,
-                isOpen: product.made_in.isOpen,
-                values: getCountriesList().map((c) => ({ label: c.id, value: c.id }))
-            },
-        ],
-    })),
-];
+        headerRow,
+        ...products.map((product, idx) => ({
+            rowId: idx,
+            cells: [
+                {
+                    type: "text",
+                    text: product.categories,
+                    nonEditable: product.props?.nonEditable,
+                },
+                {
+                    type: "text",
+                    text: product.composition,
+                    nonEditable: product.props?.nonEditable,
+                },
+                {
+                    type: "number",
+                    value: product.variant_id,
+                    nonEditable: product.props?.nonEditable,
+                },
+                {
+                    type: "number",
+                    value: product.product_type,
+                    nonEditable: product.props?.nonEditable,
+                },
+                {
+                    type: "number",
+                    value: product.department_code,
+                    nonEditable: product.props?.nonEditable,
+                },
+                {
+                    type: "number",
+                    value: product.line_code,
+                    nonEditable: product.props?.nonEditable,
+                },
+                {
+                    type: "text",
+                    text: product.title,
+                    nonEditable: product.props?.nonEditable,
+                },
+                {
+                    type: "text",
+                    text: product.description,
+                    nonEditable: product.props?.nonEditable,
+                },
+                {
+                    type: "dropdown",
+                    selectedValue: product.color_80.name,
+                    isOpen: product.color_80.isOpen,
+                    values: colorsListValues,
+                },
+                {
+                    type: "text",
+                    text: product.estilo_zap_lov,
+                    nonEditable: product.props?.nonEditable,
+                },
+                ...(!product.composition.includes("VARIANTE") ? [{
+                    type: "dropdown",
+                    selectedValue: product.gender.name,
+                    isOpen: product.gender.isOpen,
+                    values: genericsListValues,
+                    nonEditable: product.gender.props?.nonEditable,
+                    style: {
+                        backgroundColor: product.gender.props?.backgroundColor
+                    }
+                }] : [{
+                    type: "text",
+                    text: '',
+                    nonEditable: product.gender.props?.nonEditable,
+                }]),
+                {
+                    type: "dropdown",
+                    selectedValue: product.made_in.name,
+                    isOpen: product.made_in.isOpen,
+                    values: countriesListValues
+                },
+            ],
+        })),
+    ];
 
 const applyChangesToProduct = (change: any, prevProduct: Template[]) => {
-        const rowIndex = change.rowId;
-        const columnName = change.columnId;
+    const rowIndex = change.rowId;
+    const columnName = change.columnId;
 
-        if (change.type === "text") {
-            prevProduct[rowIndex][columnName] = change.newCell.text;
-        }
+    if (change.type === "text") {
+        prevProduct[rowIndex][columnName] = change.newCell.text;
+    }
 
-        if (change.type === "number") {
-            prevProduct[rowIndex][columnName] = change.newCell.value;
-        }
+    if (change.type === "number") {
+        prevProduct[rowIndex][columnName] = change.newCell.value;
+    }
 
-        if (change.type === "dropdown") {
-            if (change.newCell.selectedValue !== change.previousCell.selectedValue) {
-                prevProduct[rowIndex][columnName].name = change.newCell.selectedValue;
-            }
-            prevProduct[rowIndex][columnName].isOpen = change.newCell.isOpen;
+    if (change.type === "dropdown") {
+        if (change.newCell.selectedValue !== change.previousCell.selectedValue) {
+            prevProduct[rowIndex][columnName].name = change.newCell.selectedValue;
         }
+        prevProduct[rowIndex][columnName].isOpen = change.newCell.isOpen;
+    }
     return [...prevProduct];
 };
 
@@ -215,7 +230,7 @@ const App = () => {
     // const { filteredBranchList, loading, filterBranchList } = useLazyLoadedBranchList();
 
     const rows = getRows(
-        product, 
+        product,
         // filteredBranchList, 
         // filterBranchList
     );
@@ -233,12 +248,12 @@ const App = () => {
         changes.forEach((change) => {
             setProduct((prevProduct) => applyChangesToProduct(change, prevProduct));
         });
-        
+
     };
 
     return (
         <>
-            <ReactGrid rows={rows} stickyTopRows={1} enableRangeSelection enableFillHandle columns={columns} onCellsChanged={handleChanges} onColumnResized={handleColumnResize}  />
+            <ReactGrid rows={rows} stickyTopRows={1} enableRangeSelection enableFillHandle columns={columns} onCellsChanged={handleChanges} onColumnResized={handleColumnResize} />
         </>
     );
 };
